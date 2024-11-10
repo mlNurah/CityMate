@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Companion - CityClimate</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="notification">
+        <img class="notification-icon" alt="Notification bell icon" src="/notify.jpeg" width="30"/>
+        <span class="notification-message">Weather is neutral ❤️</span>
+    </div>
+    
+    <div class="container">
+        <div class="cloud">
+            <img class="zoom-icon" alt="Cloud with sun icon" src="/logo.png" width="100"/>
+        </div>
+        <h1 class="animated-heading">Your weather mate for cities in Bangladesh</h1>
+        <input id="cityInput" placeholder="Enter your city name" type="text"/>
+        <button id="getWeather">Check Weather</button>
+
+        <!-- Simplified Weather Display -->
+        <div class="weather-info" id="weatherDisplay"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

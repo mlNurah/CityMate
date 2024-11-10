@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.cloud {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.cloud img {
+    width: 100px;
+    height: auto;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+}
+
+button {
+    padding: 12px 30px;
+    background-color: #F5A623;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+}
+#cityInput {
+    color: #1E90FF; /* Blue color */
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+#cityInput:focus {
+    border-color: #1E90FF; /* Blue border when focused */
+}
+
+
+button:hover {
+    background-color: #e5941f;
+}
+
+.weather-info {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.notification {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+}
+
+.notification img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.notification-message {
+    font-weight: bold;
+}
+
+.emoji {
+    font-size: 40px;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+
+.zoom-icon {
+    animation: zoomInOut 2s infinite;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2); /* Zoom in slightly */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.animated-heading {
+    color: #F5A623; 
+    opacity: 0; /* Start hidden */
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Start slightly below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at original position */
+    }
+}
+
+
+.notification-icon {
+    animation: bounce 1.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.notification-message {
+    color: #F5A623; /* Matches "Get Started" button color */
+    animation: fadePulse 2s infinite;
+}
+
+@keyframes fadePulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5; /* Slight fade */
+    }
+}
+
+
